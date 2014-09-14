@@ -6,22 +6,22 @@
 // internal C++ implementation of TeamImpl class
 class TeamImpl {
     public:
-        TeamImpl(std::string name);
+        TeamImpl(const std::string &name);
         ~TeamImpl();
-        void add(std::string name);
+        void add(const std::string &name);
         int count();
     private:
         std::string name_;
         std::vector<std::string> team_;
 };
 
-TeamImpl::TeamImpl(std::string name):name_(name) {
+TeamImpl::TeamImpl(const std::string &name):name_(name) {
 }
 
 TeamImpl::~TeamImpl(){
 }
 
-void TeamImpl::add(std::string name) {
+void TeamImpl::add(const std::string &name) {
     team_.emplace_back(name);
 }
 

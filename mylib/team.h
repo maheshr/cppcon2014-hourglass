@@ -7,7 +7,7 @@
 #include <string>
 class Team {
     public:
-        Team(std::string name) {
+        Team(const std::string &name) {
             opaque_ = team_construct(name.c_str());
         }
 
@@ -15,7 +15,7 @@ class Team {
             team_destruct(opaque_);
         }
 
-        void add(std::string name) {
+        void add(const std::string &name) {
             team_add(opaque_, name.c_str());
         }
 

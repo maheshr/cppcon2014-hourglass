@@ -1,6 +1,9 @@
 # Hourglass interface pattern
-Code was motivated by this presentation at CppCon 2014
-http://www.slideshare.net/StefanusDuToit/cpp-con-2014-hourglass-interfaces-for-c-apis
+- Code was motivated by this presentation at CppCon 2014
+- http://www.slideshare.net/StefanusDuToit/cpp-con-2014-hourglass-interfaces-for-c-apis
+- Used it as an opportunity to learn how to
+    - Create dylib shared libraries in OS X using cmake
+    - Configure Vim plugin YouCompleteMe for a C++ project
 
 # Build instructions
 - checkout to /hourglass/src
