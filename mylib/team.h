@@ -6,24 +6,17 @@
 // client wrapper
 #include <string>
 class Team {
-    public:
-        Team(const std::string &name) {
-            opaque_ = team_construct(name.c_str());
-        }
+public:
+  Team(const std::string &name) { opaque_ = team_construct(name.c_str()); }
 
-        ~Team() {
-            team_destruct(opaque_);
-        }
+  ~Team() { team_destruct(opaque_); }
 
-        void add(const std::string &name) {
-            team_add(opaque_, name.c_str());
-        }
+  void add(const std::string &name) { team_add(opaque_, name.c_str()); }
 
-        int count() {
-            return team_count(opaque_);
-        }
-    private:
-        team_t opaque_;
+  int count() { return team_count(opaque_); }
+
+private:
+  team_t opaque_;
 };
 
 #endif

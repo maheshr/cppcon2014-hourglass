@@ -11,13 +11,13 @@ extern "C" {
 typedef struct team *team_t;
 
 MYLIB_EXPORT
-team_t team_construct(const char* name);
+team_t team_construct(const char *name);
 
 MYLIB_EXPORT
 void team_destruct(team_t obj);
 
 MYLIB_EXPORT
-void team_add(team_t obj, const char* name);
+void team_add(team_t obj, const char *name);
 
 MYLIB_EXPORT
 int team_count(team_t obj);

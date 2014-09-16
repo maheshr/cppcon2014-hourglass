@@ -18,3 +18,6 @@ Trivia picked up as I continue to learn how to do C++ on OS X
 - -fvisibility=hidden flag to hide symbols by default
 - cmake -DCMAKE_BUILD_TYPE=debug . to generate debug make files
 - set(CMAKE_EXPORT_COMPILE_COMMANDS 1) to generate json file for ycm
+- Generate default llvm .clang-format using 
+
+        ~/llvmbuild/build/Release+Asserts/bin/clang-format -style=llvm -dump-config > .clang-format
