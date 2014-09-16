@@ -14,10 +14,18 @@
 
 # Notes
 Trivia picked up as I continue to learn how to do C++ on OS X
-- otool -L to list dylib dependencies of binary
-- -fvisibility=hidden flag to hide symbols by default
-- cmake -DCMAKE_BUILD_TYPE=debug . to generate debug make files
-- set(CMAKE_EXPORT_COMPILE_COMMANDS 1) to generate json file for ycm
+- to list dylib dependencies of binary
+
+        otool -L
+- flag to hide symbols by default
+
+        -fvisibility=hidden
+- to generate debug make files
+
+        cmake -DCMAKE_BUILD_TYPE=debug
+- to generate json file for ycm
+
+        set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 - Generate default llvm .clang-format using 
 
         ~/llvmbuild/build/Release+Asserts/bin/clang-format -style=llvm -dump-config > .clang-format
