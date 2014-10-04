@@ -29,3 +29,7 @@ Trivia picked up as I continue to learn how to do C++ on OS X
 - Generate default llvm .clang-format using 
 
         ~/llvmbuild/build/Release+Asserts/bin/clang-format -style=llvm -dump-config > .clang-format
+
+- Xcode6 changed the location of C++ include files. Learned that you can dump
+  the location of the include files in clang using -MD -MF see
+  find\_includes.sh
