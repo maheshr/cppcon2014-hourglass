@@ -2,3 +2,4 @@
 .idea
 cscope.out
 tags
+*.d
